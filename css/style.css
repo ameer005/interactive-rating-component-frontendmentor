@@ -1,0 +1,196 @@
+/* SPACING SYSTEM (px)
+2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128
+
+FONT SIZE SYSTEM (px)
+10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98 */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Overpass", sans-serif;
+  line-height: 1;
+  font-size: 1.4rem;
+  background-color: rgb(18, 20, 23);
+  color: hsl(0, 0%, 100%);
+  font-weight: 400;
+}
+
+/*******************************/
+/* DEFAULT STATE */
+/*******************************/
+
+.rating-component {
+  margin: 17rem auto;
+  max-width: 37rem;
+
+  background-image: radial-gradient(
+    circle at 85% 80%,
+    hsla(213, 20%, 18%, 0.61) 70%,
+    hsl(213, 19%, 18%)
+  );
+  padding: 3.2rem;
+  border-radius: 24px;
+}
+
+.icon-star {
+  display: block;
+  width: 4.2rem;
+  /* width: 13%; */
+  /* background-color: rgb(45, 56, 68); */
+  background-image: radial-gradient(
+    rgba(45, 56, 68, 0.521),
+    rgba(45, 56, 68, 0.527)
+  );
+  padding: 1.3rem;
+  border-radius: 50%;
+  margin-bottom: 2.4rem;
+}
+
+.rating-heading {
+  font-size: 2.4rem;
+  font-weight: 700;
+  margin-bottom: 1.6rem;
+}
+
+.rating-text {
+  font-size: 1.4rem;
+  line-height: 1.5;
+  color: hsl(217, 12%, 63%);
+  margin-bottom: 2.4rem;
+}
+
+.rating-numbers {
+  display: flex;
+  justify-content: space-between;
+  gap: 1.2rem;
+  margin-bottom: 2.4rem;
+}
+
+.btn-rating {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 4.4rem;
+  width: 4.4rem;
+  border: none;
+  border-radius: 50%;
+  font-size: 1.4rem;
+  background: none;
+  background-image: radial-gradient(
+    rgba(45, 56, 68, 0.521),
+    rgba(45, 56, 68, 0.527)
+  );
+  color: hsl(217, 12%, 63%);
+}
+
+.btn-rating:hover {
+  background-color: hsl(217, 12%, 63%);
+  color: hsl(0, 0%, 100%);
+}
+
+.active {
+  background: none;
+  background-color: hsl(25, 97%, 53%);
+  color: hsl(0, 0%, 100%);
+}
+
+.submit {
+  display: flex;
+  justify-content: center;
+}
+
+.btn-submit {
+  border: none;
+  text-transform: uppercase;
+  font-weight: 700;
+  letter-spacing: 2px;
+  font-size: 1.2rem;
+  color: hsl(0, 0%, 100%);
+  background-color: hsl(25, 97%, 53%);
+  width: 100%;
+  padding: 1.2rem 0;
+  border-radius: 24px;
+}
+
+.btn-submit:hover {
+  background-color: hsl(0, 0%, 100%);
+  color: hsl(25, 97%, 53%);
+}
+
+/*******************************/
+/* THANK YOU STATE */
+/*******************************/
+
+.thank-you-state {
+  /* text-align: center; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  height: 29.49rem;
+}
+
+.thank-you-img {
+  display: block;
+  height: 9.5rem;
+  margin-bottom: 2.4rem;
+  justify-content: center;
+}
+
+.selected {
+  display: inline-block;
+  font-size: 1.4rem;
+  color: #fb7413;
+  background-image: radial-gradient(
+    rgba(45, 56, 68, 0.521),
+    rgba(45, 56, 68, 0.527)
+  );
+
+  padding: 0.8rem 1.6rem;
+  border-radius: 24px;
+
+  margin-bottom: 3.2rem;
+}
+
+.thank-you-heading {
+  font-size: 2.4rem;
+  font-weight: 700;
+  margin-bottom: 1.4rem;
+}
+
+.thank-you-text {
+  font-size: 1.35rem;
+  color: hsl(216, 12%, 54%);
+  line-height: 1.5;
+}
+
+.hidden {
+  display: none;
+}
+
+/*******************************/
+/* BELOW 1440PX */
+/*******************************/
+
+@media screen and (max-width: 25em) {
+  .rating-component {
+    max-width: 35rem;
+  }
+}
+
+/* ATTRIBUTION */
+/* .attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+} */
