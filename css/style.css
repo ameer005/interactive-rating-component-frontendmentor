@@ -94,9 +94,16 @@ body {
 .btn-rating:hover {
   background-color: hsl(217, 12%, 63%);
   color: hsl(0, 0%, 100%);
+  cursor: pointer;
 }
 
 .active {
+  background: none;
+  background-color: hsl(25, 97%, 53%);
+  color: hsl(0, 0%, 100%);
+}
+
+.active:hover {
   background: none;
   background-color: hsl(25, 97%, 53%);
   color: hsl(0, 0%, 100%);
@@ -123,6 +130,7 @@ body {
 .btn-submit:hover {
   background-color: hsl(0, 0%, 100%);
   color: hsl(25, 97%, 53%);
+  cursor: pointer;
 }
 
 /*******************************/
