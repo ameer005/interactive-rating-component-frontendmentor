@@ -4,7 +4,7 @@
 
 ### Links
 
-- Live Site URL: [https://ameer005.github.io/interactive-rating-component-frontendmentor/](https://your-live-site-url.com)
+- Live Site URL: [link](https://ameer005.github.io/interactive-rating-component-frontendmentor/) 
 
 ## My process
 
